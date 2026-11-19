@@ -1,4 +1,4 @@
 plugins {
     alias(libs.plugins.android.application) apply false
-    id("com.google.devtools.ksp") version "2.1.20-1.0.32" apply false
+    id("com.google.devtools.ksp") version "2.2.10-2.0.2" apply false
 }

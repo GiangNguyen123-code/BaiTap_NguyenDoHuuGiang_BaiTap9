@@ -43,7 +43,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.2.0")
 
     // Room Database (theo video bài giảng)
-    val roomVersion = "2.6.1"
+    val roomVersion = "2.7.1"
     implementation("androidx.room:room-runtime:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion")
     ksp("androidx.room:room-compiler:$roomVersion")
