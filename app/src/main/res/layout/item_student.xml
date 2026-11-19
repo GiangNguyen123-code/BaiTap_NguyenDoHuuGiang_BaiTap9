@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="5dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp"
+    app:strokeColor="#E2E8F0"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="12dp">
+
+        <!-- Cột thông tin sinh viên -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvStudentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Đỗ Hữu Giang"
+                android:textColor="#1E293B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvStudentInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="#EEF2FF"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp"
+                android:text="MSV: 2415053122312  •  GPA: 3.8"
+                android:textColor="#3730A3"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Cụm nút thao tác -->
+        <ImageButton
+            android:id="@+id/btnStar"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Đánh dấu"
+            android:src="@android:drawable/btn_star_big_off" />
+
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="2dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Sửa"
+            android:src="@android:drawable/ic_menu_edit"
+            app:tint="#2563EB" />
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="2dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Xóa"
+            android:src="@android:drawable/ic_menu_delete"
+            app:tint="#DC2626" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
